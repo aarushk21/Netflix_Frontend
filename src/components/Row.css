@@ -1,6 +1,7 @@
 .row {
   color: white;
   margin-left: 20px;
+  position: relative;
 }
 
 .row__posters {
@@ -20,6 +21,7 @@
   margin-right: 10px;
   width: 100%;
   transition: transform 450ms;
+  cursor: pointer;
 }
 
 .row__poster:hover {
@@ -34,4 +36,51 @@
 .row__posterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
+}
+
+.row__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.row__modalContent {
+  background: #111;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.row__modalContent h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.row__modalContent p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.row__modalContent button {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.row__modalContent button:hover {
+  background: #f40612;
 }
