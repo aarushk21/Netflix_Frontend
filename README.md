@@ -17,9 +17,13 @@ A React-based Netflix clone featuring real movie data from TMDB API, with movie 
    - Create an account and request an API key
    - Copy your API key
 
-2. Configure the App:
-   - Open `src/config/requests.js`
-   - Replace `YOUR_TMDB_API_KEY` with your actual TMDB API key
+2. Configure Environment Variables:
+   - Create a `.env` file in the root directory
+   - Add your TMDB API key:
+     ```
+     REACT_APP_TMDB_API_KEY=your_api_key_here
+     ```
+   Note: Never commit the `.env` file to version control
 
 3. Install Dependencies:
 ```bash
@@ -46,6 +50,10 @@ The app will open in your browser at [http://localhost:3000](http://localhost:30
 - TMDB API
 - CSS3 with animations
 - Fetch API for data fetching
+
+## Environment Variables
+The following environment variables are required:
+- `REACT_APP_TMDB_API_KEY`: Your TMDB API key
 
 ## Coming Soon
 - User authentication
